@@ -1,0 +1,150 @@
+/* IMAGEM PERSON */
+img {width: 100%;}
+
+/* DISTANCIA ENTRE "INICIO" E "SOBRE" */
+section.landing {padding: 0rem 0px 0rem;}    
+
+/* BARRA DE INÍCIO: FLEXBOX */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: #dedede;
+    align-items: center;
+}
+
+/* BARRA DE INÍCIO: DISTÂNCIA COM GAP (NÃO MODIFICAR) */
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;  
+}
+
+/* BARRA DE INÍCIO: FONTE E COR DA LETRA (NÃO MODIFICAR) */
+.nav-menu .links {
+    font-size: 24px;
+    text-decoration: none;
+    color: #000;
+}
+
+/* BARRA DE INÍCIO: COR DO HOVER */
+.nav-menu .links:hover {
+    background-color: orangered;
+    transition: 1s;
+    color:#fff;
+}
+
+@media (max-width: 700px) {
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        padding: 0;
+    }
+
+    .nav-menu {
+        padding: 0;
+    }
+}
+
+/* INÍCIO: FONT TEXT */
+section.landing {
+    display: grid; 
+    float: left;
+    place-items: center;
+    top: 10rem;
+    margin-top:	15rem;
+    margin-right: 25em; 
+}
+
+/* INÍCIO: POSIÇÃO LINKS */
+section.landing .container {
+    place-items: center;
+    float: right;
+    display: grid;
+    position: relative;
+    top: 10rem;} /*links*/
+
+/* INÍCIO: DISTACIA DO HEAD */
+section.landing .socials {
+    display: flex;
+    float: left;
+    flex-direction: column;
+    gap: 1.6rem;
+    margin-top: 5rem;
+    margin-left: 15em;
+}
+
+/* INÍCIO: FONT LINKS */
+section.landing .socials a{
+    font-size: 1.5rem;
+    background: var(--color-light);
+    color : var(--color-dark);
+    padding: .1rem;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    transition: var(--transition);}
+
+/* FONTE DO TEXTO H3 */
+section.landing h3 
+    {margin: 2.4rem 0 1rem;}
+
+section.landing .profile-area{
+  display: flex;
+  justify-content: center;
+  align-items: center;}
+
+/* ==== OUTER-CIRCLE ==== (NÃO MODIFICAR) */  
+section.landing .profile-area .outer-circle 
+    {width: 26rem;
+    height: 26rem;
+    border: 1px solid var(--color-primary);
+    border-radius: 50%;
+    position: relative;
+    animation: move 30s linear infinite;}
+
+@keyframes move {to {transform: rotate(360deg);}}
+
+section.landing .profile-area .outer-circle span {
+    width: 600px;
+    height: 600px;
+    float: right;
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    position: absolute;
+    background: var(--color-white);
+    color : var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 1rem var(--color-primary-light);
+}
+
+/* INÍCIO: CIRCLE IMG (NÃO MODIFICAR) */
+section.landing .profile-area .outer-circle span:nth-child(1) {
+    left: calc(50% - 2rem);
+    top: -2rem;}
+
+section.landing .profile-area .outer-circle span:nth-child(2) 
+    {right: -2rem;
+    top: calc(50% - 2rem);}
+
+section.landing .profile-area .outer-circle span:nth-child(3) 
+    {left: -2rem;
+    top: calc(50% - 2rem);}
+
+section.landing .profile-area .outer-circle span:nth-child(4) 
+    {bottom: -2rem;
+    left: calc(50% - 2rem);}
+
+section.landing .profile-area .inner-circle 
+    {position: absolute;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    overflow: hidden;
+}

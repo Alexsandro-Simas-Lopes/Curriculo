@@ -1,0 +1,11 @@
+/* SOBRE: COR LIGHT DO CARD */
+section.sobre {
+    width: 100%;
+}
+
+section.sobre 
+    {background: var(--color-light);}
+
+p {
+    text-align: justify;
+}

@@ -1,0 +1,28 @@
+/* CURSOS */
+section.cursos 
+    {background: var(--color-light);}
+
+section.cursos .container 
+    {display: grid;
+    gap: 2rem;}
+
+/* ADICIONAR -> FLEXBOX NO HTML */
+section.cursos .container .curso
+    {background: var(--color-white);
+    text-align: center;
+    display: flex;
+    flex-direction:column;
+    gap: 2rem 2rem;
+    transition: var(--transition);} 
+
+
+section.cursos .container .curso span 
+    {background: var(--color-primary);
+    width: 4rem;
+    height: 4rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--color-white);}

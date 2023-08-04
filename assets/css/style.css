@@ -1,0 +1,44 @@
+:root 
+    {--color-white: #fff;
+    --color-light: #f4f4f4;
+    --color-dark: #525252;
+    --color-black: #141415;
+    --color-primary: #f24e1e;
+    --color-primary-light: hsl(14,89%,53%, 12%);
+    --color-success: #29f5a6;
+    --color-warning: #ffce31;
+
+    --transition: all 300ms ease;}
+
+h1 {font-size: 3.2rem;}
+h2 {font-size: 2.6rem;}
+h3 {font-size: 1.6rem;}
+h4 {font-size: 1.2rem;}
+h5 {font-size: 0.86rem;
+    text-align: center;}
+
+.container {
+        width: 90%;
+        margin: 0 auto;}
+    
+section {
+        padding: 10rem 0px 7rem;
+        max-width: 100vw;
+        overflow-x: hidden;}
+    
+section h1 {
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 5rem;
+        width: 30rem;}
+    
+
+
+
+
+
+
+
+
+
