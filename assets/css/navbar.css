@@ -1,0 +1,41 @@
+/* BARRA DE INÍCIO: FLEXBOX */
+.navbar {
+    display: flex;
+    justify-content:space-around!important;
+    padding: 20px 40px;
+    background-color: #000000c6;
+}
+
+/* BARRA DE INÍCIO: DISTÂNCIA COM GAP (NÃO MODIFICAR) */
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;  
+}
+
+/* BARRA DE INÍCIO: FONTE E COR DA LETRA (NÃO MODIFICAR) */
+.nav-menu .links {
+    font-size: 24px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* BARRA DE INÍCIO: COR DO HOVER */
+.nav-menu .links:hover {
+    background-color: orangered;
+    transition: 1s;
+    color:#fff;
+}
+
+/* @media (max-width: 700px) {
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        padding: 0;
+    }
+
+    .nav-menu {
+        padding: 0;
+    }
+} */
